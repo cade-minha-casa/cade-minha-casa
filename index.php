@@ -29,7 +29,7 @@
 
 <body>
     <?php
-        include('navBar2.html')
+        include('./frontend/components/navBar2.html')
     ?>
     <div class="container-fluid mt-lg-5">
         <div class="row d-flex justify-content-center">
@@ -61,10 +61,10 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="20000">
 
-                            <img src="./image/imgslide-1.png" class="d-block w-100" alt="...">
+                            <img src="./frontend/images/imgslide-1.png" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item" data-bs-interval="20000">
-                            <img src="./image/imgslide-2.png" class="d-block w-100" alt="...">
+                            <img src="./frontend/images/imgslide-2.png" class="d-block w-100" alt="...">
                         </div>
 
                     </div>
