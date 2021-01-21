@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require './backend/Connection.php'
 ?>
 <!DOCTYPE html>
@@ -29,7 +30,13 @@
 
 <body>
     <?php
-        include('./frontend/components/navBar2.html')
+       if (isset($_SESSION['id'])) {
+        include('./frontend/components/navBar2.html');
+        
+    } else {
+        include('./frontend/components/navBar.html');
+    }
+        
     ?>
     <div class="container-fluid mt-lg-5">
         <div class="row d-flex justify-content-center">
